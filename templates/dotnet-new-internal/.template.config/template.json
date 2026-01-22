@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Khaos",
+  "classifications": [ "internal", "api" ],
+  "identity": "Khaos.ApiModule.Internal",
+  "name": "Khaos Internal API module",
+  "shortName": "khaos-internal",
+  "description": "Creates an Internal.<ApiName> project with minimal endpoints and DI.",
+  "sourceName": "ApiModuleSeed",
+  "preferNameDirectory": false,
+  "symbols": {
+    "ApiName": {
+      "type": "parameter",
+      "datatype": "text",
+      "description": "Name of the API module (e.g. NedCase).",
+      "defaultValue": "Sample",
+      "replaces": "ApiModuleSeed",
+      "fileRename": "ApiModuleSeed"
+    },
+    "SolutionFolder": {
+      "type": "parameter",
+      "datatype": "text",
+      "description": "Root folder (src or apps) where projects are created.",
+      "defaultValue": "src",
+      "replaces": "__SolutionFolder__",
+      "fileRename": "__SolutionFolder__"
+    }
+  },
+  "primaryOutputs": [
+    { "path": "{{SolutionFolder}}/Internal.{{ApiName}}/Internal.{{ApiName}}.csproj" }
+  ]
+}

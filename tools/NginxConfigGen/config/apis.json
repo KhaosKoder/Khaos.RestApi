@@ -1,0 +1,25 @@
+{
+  "apis": [
+    {
+      "name": "sample",
+      "pathPrefix": "/apis/api-module-seed",
+      "upstream": {
+        "serviceName": "host-internal",
+        "port": 8080
+      },
+      "rateLimit": {
+        "enabled": true,
+        "requestsPerMinute": 600
+      },
+      "timeouts": {
+        "connectSeconds": 5,
+        "sendSeconds": 60,
+        "readSeconds": 60
+      },
+      "methods": ["GET", "POST", "PUT", "DELETE"],
+      "auth": {
+        "forwardHeaders": ["Authorization", "X-Correlation-Id"]
+      }
+    }
+  ]
+}

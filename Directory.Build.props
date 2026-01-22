@@ -1,0 +1,54 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <LangVersion>preview</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+  <!-- Versioning Configuration (MinVer) -->
+  <PropertyGroup>
+    <MinVerTagPrefix>Khaos.RestApi/v</MinVerTagPrefix>
+    <MinVerAutoIncrement>minor</MinVerAutoIncrement>
+    <MinVerDefaultPreReleaseIdentifiers>alpha.0</MinVerDefaultPreReleaseIdentifiers>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(MinVerVersion)' != ''">
+    <Version>$(MinVerVersion)</Version>
+    <PackageVersion>$(MinVerVersion)</PackageVersion>
+    <AssemblyVersion>$(MinVerAssemblyVersion)</AssemblyVersion>
+    <FileVersion>$(MinVerFileVersion)</FileVersion>
+    <InformationalVersion>$(MinVerInformationalVersion)</InformationalVersion>
+  </PropertyGroup>
+
+  <!-- Package Metadata -->
+  <PropertyGroup Condition="'$(IsPackable)' != 'false'">
+    <Authors>Khaos</Authors>
+    <Company>Khaos</Company>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)artifacts\</PackageOutputPath>
+    <RepositoryUrl>https://github.com/KhaosKoder/Khaos.RestApi</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/KhaosKoder/Khaos.RestApi</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="5.*" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(MSBuildProjectName)' != 'Common.Analyzers'">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)src\Common.Analyzers\Common.Analyzers.csproj"
+                      OutputItemType="Analyzer"
+                      ReferenceOutputAssembly="false" />
+  </ItemGroup>
+</Project>

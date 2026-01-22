@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Khaos",
+  "classifications": [ "api", "scaffold" ],
+  "identity": "Khaos.ApiModule.Template",
+  "name": "Khaos API module",
+  "description": "Creates External/Domain/Internal/Client projects plus architecture tests for a new provider integration.",
+  "shortName": "khaos-apimodule",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "Khaos.ApiTemplate.Placeholder",
+  "preferNameDirectory": false,
+  "symbols": {
+    "ApiName": {
+      "type": "parameter",
+      "datatype": "text",
+      "description": "Name of the API module (e.g. NedCase).",
+      "defaultValue": "Sample",
+      "replaces": "ApiModuleSeed",
+      "fileRename": "ApiModuleSeed"
+    },
+    "DbSchema": {
+      "type": "parameter",
+      "datatype": "text",
+      "description": "Database schema for EF Core audit tables.",
+      "defaultValue": "Audit",
+      "replaces": "{{DB_SCHEMA}}"
+    },
+    "TableMode": {
+      "type": "parameter",
+      "datatype": "choice",
+      "description": "Audit table layout (Single table or split request/response).",
+      "defaultValue": "Single",
+      "choices": [
+        { "choice": "Single", "description": "Single table per API" },
+        { "choice": "Split", "description": "Separate request and response tables" }
+      ],
+      "replaces": "{{TABLE_MODE}}"
+    },
+    "EnableAuditing": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "Whether Domain auditing is enabled by default.",
+      "defaultValue": "true",
+      "replaces": "{{ENABLE_AUDIT}}"
+    },
+    "SolutionFolder": {
+      "type": "parameter",
+      "datatype": "text",
+      "description": "Root folder (src or apps) where projects are created.",
+      "defaultValue": "src",
+      "replaces": "__SolutionFolder__",
+      "fileRename": "__SolutionFolder__"
+    },
+    "RefitVersion": {
+      "type": "parameter",
+      "datatype": "text",
+      "description": "Refit package version.",
+      "defaultValue": "9.0.2",
+      "replaces": "{{REFIT_VERSION}}"
+    }
+  },
+  "primaryOutputs": [
+    { "path": "{{SolutionFolder}}/External.{{ApiName}}/External.{{ApiName}}.csproj" },
+    { "path": "{{SolutionFolder}}/Domain.{{ApiName}}/Domain.{{ApiName}}.csproj" },
+    { "path": "{{SolutionFolder}}/Internal.{{ApiName}}/Internal.{{ApiName}}.csproj" },
+    { "path": "{{SolutionFolder}}/Client.{{ApiName}}/Client.{{ApiName}}.csproj" },
+    { "path": "tests/Architecture.{{ApiName}}.Tests/Architecture.{{ApiName}}.Tests.csproj" }
+  ]
+}
