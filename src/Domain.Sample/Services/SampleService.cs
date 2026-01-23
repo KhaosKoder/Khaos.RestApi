@@ -111,6 +111,7 @@ internal sealed class SampleService : ISampleService
         string? correlationId,
         DateTimeOffset requestTimestamp,
         DateTimeOffset responseTimestamp,
+        AuditRedactionOptions redactionOptions,
         CancellationToken cancellationToken)
     {
         var options = _options.Get(SampleConstants.ApiName);
@@ -130,7 +131,8 @@ internal sealed class SampleService : ISampleService
             responseJson,
             requestTimestamp,
             responseTimestamp,
-            options);
+            options,
+            redactionOptions);
 
         try
         {

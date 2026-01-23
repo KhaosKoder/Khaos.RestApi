@@ -2,6 +2,7 @@ using Common.Persistence;
 using Common.Persistence.DependencyInjection;
 using Common.Persistence.Entities;
 using Common.Persistence.Repositories;
+using Common.Persistence.Options;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -87,6 +88,7 @@ public sealed class ApiAuditRepositoryTests : IAsyncLifetime, IDisposable
         _connection.Open();
 
         var services = new ServiceCollection();
+        services.AddOptions<AuditStoreOptions>();
         services.AddCommonPersistence(builder => builder.UseSqlite(_connection));
 
         _provider = services.BuildServiceProvider();
