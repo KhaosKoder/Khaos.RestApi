@@ -5,7 +5,7 @@
   "identity": "Khaos.ApiModule.Client",
   "name": "Khaos Client SDK module",
   "shortName": "khaos-client",
-  "description": "Creates a Client.<ApiName> SDK that calls Internal endpoints.",
+  "description": "Creates a Khaos.RestApi.Client.<ApiName> SDK that calls Internal endpoints.",
   "sourceName": "ApiModuleSeed",
   "preferNameDirectory": false,
   "symbols": {
@@ -27,6 +27,6 @@
     }
   },
   "primaryOutputs": [
-    { "path": "{{SolutionFolder}}/Client.{{ApiName}}/Client.{{ApiName}}.csproj" }
+    { "path": "{{SolutionFolder}}/Khaos.RestApi.Client.{{ApiName}}/Khaos.RestApi.Client.{{ApiName}}.csproj" }
   ]
 }

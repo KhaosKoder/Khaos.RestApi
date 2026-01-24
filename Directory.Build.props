@@ -46,8 +46,8 @@
     <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="9.0.3" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(MSBuildProjectName)' != 'Common.Analyzers'">
-    <ProjectReference Include="$(MSBuildThisFileDirectory)src\Common.Analyzers\Common.Analyzers.csproj"
+  <ItemGroup Condition="'$(MSBuildProjectName)' != 'Khaos.RestApi.Common.Analyzers'">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)src\Khaos.RestApi.Common.Analyzers\Khaos.RestApi.Common.Analyzers.csproj"
                       OutputItemType="Analyzer"
                       ReferenceOutputAssembly="false" />
   </ItemGroup>

@@ -3,8 +3,8 @@
     <Message Text="Building $(MSBuildProjectName) ($(Configuration))" Importance="Low" />
   </Target>
 
-  <Target Name="GenerateNginxConfig" AfterTargets="Build" Condition="'$(MSBuildProjectName)' == 'Host.Internal' and Exists('$(MSBuildThisFileDirectory)tools\NginxConfigGen\config\apis.json')">
+  <Target Name="GenerateNginxConfig" AfterTargets="Build" Condition="'$(MSBuildProjectName)' == 'Khaos.RestApi.Host.Internal' and Exists('$(MSBuildThisFileDirectory)tools\Khaos.RestApi.NginxConfigGen\config\apis.json')">
     <Message Text="Generating NGINX configs" Importance="Low" />
-    <Exec Command="dotnet run --project &quot;$(MSBuildThisFileDirectory)tools\NginxConfigGen\NginxConfigGen.csproj&quot; --config &quot;$(MSBuildThisFileDirectory)tools\NginxConfigGen\config\apis.json&quot; --output &quot;$(MSBuildThisFileDirectory)artifacts\nginx&quot;" />
+    <Exec Command="dotnet run --project &quot;$(MSBuildThisFileDirectory)tools\Khaos.RestApi.NginxConfigGen\Khaos.RestApi.NginxConfigGen.csproj&quot; --config &quot;$(MSBuildThisFileDirectory)tools\Khaos.RestApi.NginxConfigGen\config\apis.json&quot; --output &quot;$(MSBuildThisFileDirectory)artifacts\nginx&quot;" />
   </Target>
 </Project>

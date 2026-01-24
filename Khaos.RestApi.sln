@@ -5,25 +5,25 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Abstractions", "src\Common.Abstractions\Common.Abstractions.csproj", "{9D698198-A179-4D15-BCAE-3D715A5ADD63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaos.RestApi.Common.Abstractions", "src\Khaos.RestApi.Common.Abstractions\Khaos.RestApi.Common.Abstractions.csproj", "{9D698198-A179-4D15-BCAE-3D715A5ADD63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Observability", "src\Common.Observability\Common.Observability.csproj", "{DE0FFB7E-6932-4ED0-BAF0-1B36A40CE0D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaos.RestApi.Common.Observability", "src\Khaos.RestApi.Common.Observability\Khaos.RestApi.Common.Observability.csproj", "{DE0FFB7E-6932-4ED0-BAF0-1B36A40CE0D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Persistence", "src\Common.Persistence\Common.Persistence.csproj", "{7147694E-4F38-4F8F-9DB6-BC02621E5A8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaos.RestApi.Common.Persistence", "src\Khaos.RestApi.Common.Persistence\Khaos.RestApi.Common.Persistence.csproj", "{7147694E-4F38-4F8F-9DB6-BC02621E5A8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host.Internal", "src\Host.Internal\Host.Internal.csproj", "{45D4D897-6523-435A-8D03-494ECFD81812}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaos.RestApi.Host.Internal", "src\Khaos.RestApi.Host.Internal\Khaos.RestApi.Host.Internal.csproj", "{45D4D897-6523-435A-8D03-494ECFD81812}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Abstractions.Tests", "tests\Common.Abstractions.Tests\Common.Abstractions.Tests.csproj", "{7F0E2FDF-CC25-43B9-8C21-A145A493A5D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaos.RestApi.Common.Abstractions.Tests", "tests\Khaos.RestApi.Common.Abstractions.Tests\Khaos.RestApi.Common.Abstractions.Tests.csproj", "{7F0E2FDF-CC25-43B9-8C21-A145A493A5D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Observability.Tests", "tests\Common.Observability.Tests\Common.Observability.Tests.csproj", "{E6600EE0-A0A1-4B72-94EC-82A4C068897A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaos.RestApi.Common.Observability.Tests", "tests\Khaos.RestApi.Common.Observability.Tests\Khaos.RestApi.Common.Observability.Tests.csproj", "{E6600EE0-A0A1-4B72-94EC-82A4C068897A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Persistence.Tests", "tests\Common.Persistence.Tests\Common.Persistence.Tests.csproj", "{9C699979-4CBE-4758-B675-A8B465B38A8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaos.RestApi.Common.Persistence.Tests", "tests\Khaos.RestApi.Common.Persistence.Tests\Khaos.RestApi.Common.Persistence.Tests.csproj", "{9C699979-4CBE-4758-B675-A8B465B38A8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Analyzers", "src\Common.Analyzers\Common.Analyzers.csproj", "{C34CE56F-45BB-4214-A63B-969C9EB01577}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaos.RestApi.Common.Analyzers", "src\Khaos.RestApi.Common.Analyzers\Khaos.RestApi.Common.Analyzers.csproj", "{C34CE56F-45BB-4214-A63B-969C9EB01577}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Analyzers.Tests", "tests\Common.Analyzers.Tests\Common.Analyzers.Tests.csproj", "{C2FC863D-5638-49C5-AB27-F569FCC96AEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaos.RestApi.Common.Analyzers.Tests", "tests\Khaos.RestApi.Common.Analyzers.Tests\Khaos.RestApi.Common.Analyzers.Tests.csproj", "{C2FC863D-5638-49C5-AB27-F569FCC96AEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,7 +5,7 @@
   "identity": "Khaos.ApiModule.Domain",
   "name": "Khaos Domain API module",
   "shortName": "khaos-domain",
-  "description": "Creates a Domain.<ApiName> project wired for the ApiModule pattern.",
+  "description": "Creates a Khaos.RestApi.Domain.<ApiName> project wired for the ApiModule pattern.",
   "sourceName": "ApiModuleSeed",
   "preferNameDirectory": false,
   "symbols": {
@@ -27,6 +27,6 @@
     }
   },
   "primaryOutputs": [
-    { "path": "{{SolutionFolder}}/Domain.{{ApiName}}/Domain.{{ApiName}}.csproj" }
+    { "path": "{{SolutionFolder}}/Khaos.RestApi.Domain.{{ApiName}}/Khaos.RestApi.Domain.{{ApiName}}.csproj" }
   ]
 }

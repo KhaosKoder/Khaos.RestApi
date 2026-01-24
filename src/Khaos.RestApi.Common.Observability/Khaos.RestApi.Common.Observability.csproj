@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Khaos.RestApi.Common.Abstractions\Khaos.RestApi.Common.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

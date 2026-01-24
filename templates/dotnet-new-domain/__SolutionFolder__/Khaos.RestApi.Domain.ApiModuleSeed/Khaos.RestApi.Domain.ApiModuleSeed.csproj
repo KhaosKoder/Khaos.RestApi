@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Khaos.RestApi.Common.Abstractions\Khaos.RestApi.Common.Abstractions.csproj" />
+    <ProjectReference Include="..\Khaos.RestApi.Common.Observability\Khaos.RestApi.Common.Observability.csproj" />
+    <ProjectReference Include="..\Khaos.RestApi.Common.Persistence\Khaos.RestApi.Common.Persistence.csproj" />
+    <ProjectReference Include="..\Khaos.RestApi.External.ApiModuleSeed\Khaos.RestApi.External.ApiModuleSeed.csproj" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

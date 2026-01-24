@@ -5,7 +5,7 @@
   "identity": "Khaos.ApiModule.Internal",
   "name": "Khaos Internal API module",
   "shortName": "khaos-internal",
-  "description": "Creates an Internal.<ApiName> project with minimal endpoints and DI.",
+  "description": "Creates a Khaos.RestApi.Internal.<ApiName> project with minimal endpoints and DI.",
   "sourceName": "ApiModuleSeed",
   "preferNameDirectory": false,
   "symbols": {
@@ -27,6 +27,6 @@
     }
   },
   "primaryOutputs": [
-    { "path": "{{SolutionFolder}}/Internal.{{ApiName}}/Internal.{{ApiName}}.csproj" }
+    { "path": "{{SolutionFolder}}/Khaos.RestApi.Internal.{{ApiName}}/Khaos.RestApi.Internal.{{ApiName}}.csproj" }
   ]
 }

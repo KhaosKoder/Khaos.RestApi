@@ -18,4 +18,4 @@ jobs:
       - run: dotnet test --configuration Release --no-build
       - run: dotnet format --verify-no-changes
       - run: dotnet tool restore
-      - run: dotnet run --project ./tools/NginxConfigGen/NginxConfigGen.csproj
+      - run: dotnet run --project ./tools/Khaos.RestApi.NginxConfigGen/Khaos.RestApi.NginxConfigGen.csproj

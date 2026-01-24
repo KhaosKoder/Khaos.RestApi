@@ -63,10 +63,10 @@
     }
   },
   "primaryOutputs": [
-    { "path": "{{SolutionFolder}}/External.{{ApiName}}/External.{{ApiName}}.csproj" },
-    { "path": "{{SolutionFolder}}/Domain.{{ApiName}}/Domain.{{ApiName}}.csproj" },
-    { "path": "{{SolutionFolder}}/Internal.{{ApiName}}/Internal.{{ApiName}}.csproj" },
-    { "path": "{{SolutionFolder}}/Client.{{ApiName}}/Client.{{ApiName}}.csproj" },
-    { "path": "tests/Architecture.{{ApiName}}.Tests/Architecture.{{ApiName}}.Tests.csproj" }
+    { "path": "{{SolutionFolder}}/Khaos.RestApi.External.{{ApiName}}/Khaos.RestApi.External.{{ApiName}}.csproj" },
+    { "path": "{{SolutionFolder}}/Khaos.RestApi.Domain.{{ApiName}}/Khaos.RestApi.Domain.{{ApiName}}.csproj" },
+    { "path": "{{SolutionFolder}}/Khaos.RestApi.Internal.{{ApiName}}/Khaos.RestApi.Internal.{{ApiName}}.csproj" },
+    { "path": "{{SolutionFolder}}/Khaos.RestApi.Client.{{ApiName}}/Khaos.RestApi.Client.{{ApiName}}.csproj" },
+    { "path": "tests/Khaos.RestApi.Architecture.{{ApiName}}.Tests/Khaos.RestApi.Architecture.{{ApiName}}.Tests.csproj" }
   ]
 }

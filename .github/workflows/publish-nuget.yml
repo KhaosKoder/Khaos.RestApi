@@ -14,7 +14,7 @@ jobs:
         with:
           dotnet-version: '9.0.x'
       - run: dotnet restore
-      - run: dotnet pack src/Common.Abstractions/Common.Abstractions.csproj -c Release -o ./artifacts
-      - run: dotnet pack src/Common.Analyzers/Common.Analyzers.csproj -c Release -o ./artifacts
+      - run: dotnet pack src/Khaos.RestApi.Common.Abstractions/Khaos.RestApi.Common.Abstractions.csproj -c Release -o ./artifacts
+      - run: dotnet pack src/Khaos.RestApi.Common.Analyzers/Khaos.RestApi.Common.Analyzers.csproj -c Release -o ./artifacts
       - name: Push packages
         run: dotnet nuget push "./artifacts/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
